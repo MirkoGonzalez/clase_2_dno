@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@400;700&display=swap");
+
+:root {
+    --figura: rgb(1000, 1000, 0);
+    --fondo: rgb(100, 10, 10);
+    /* Valor de contrast-ratio: 12.3; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: color ease 0.5s;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--figura);
+    background: var(--fondo);
+    line-height: 1.25;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 3vw;
+}
+
+a:hover {
+    color: #666;
+}
+
+header, main, footer {
+    width: 86vw;
+    margin: 0;
+    padding: 5vh 7vw;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    
+    text-shadow: 3px 3px 5px rgba(100, 100, 100, 0.25);
+}
+
+header h1 {
+    font-size: 3.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+footer div#controles{
+    background:#eee;
+    border:1px solid #ddd;
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.25);
+}
+
+footer div#controles input[type=color]{
+    border-radius: 0 0;
+    border:none;
+    border-right:1px solid #ddd;
+    padding:3px 5px;
+    width:2rem;
+}
+
+footer div#controles input[type=range]{
+    width:4rem;
+    margin:0 0.5rem;
+}
